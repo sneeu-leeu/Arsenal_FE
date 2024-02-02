@@ -7,7 +7,7 @@
 ![homepage](https://github.com/sneeu-leeu/Arsenal_FE/blob/master/player_api_front/images/Screenshot%20from%202024-02-02%2023-17-10.png)
 
 ### Player CRUD page
-![Player](https://user-images.githubusercontent.com/53402600/175576586-e7e36060-d756-479b-9b6d-c950a3730209.png)
+![Player](https://github.com/sneeu-leeu/Arsenal_FE/blob/master/player_api_front/images/playerList.png)
 
 
 ### Full Squad Page (external API)
@@ -15,7 +15,7 @@
 
 
 ### Add/Update modals
-![Modal](https://user-images.githubusercontent.com/53402600/175576683-c7752204-6d33-4027-a234-a51de43bff66.png)
+![Modal](https://github.com/sneeu-leeu/Arsenal_FE/blob/master/player_api_front/images/add.png)
 
 ![modal](https://github.com/sneeu-leeu/Arsenal_FE/blob/master/player_api_front/images/edit.png)
 
