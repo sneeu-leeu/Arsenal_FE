@@ -4,7 +4,7 @@
 [ARSENAL API](https://github.com/sneeu-leeu/arsenal_api)
 
 ### Home Page
-![homepage](https://user-images.githubusercontent.com/53402600/175576410-6d7b3cc3-f16c-4a40-a651-f1cfef00d548.png)
+![homepage]()
 
 ### Player CRUD page
 ![Player](https://user-images.githubusercontent.com/53402600/175576586-e7e36060-d756-479b-9b6d-c950a3730209.png)
