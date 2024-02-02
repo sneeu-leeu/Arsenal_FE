@@ -15,7 +15,7 @@
 
 
 ### Add/Update modals
-![Modal](https://user-images.githubusercontent.com/53402600/175576683-c7752204-6d33-4027-a234-a51de43bff66.png)
+![Modal](https://github.com/sneeu-leeu/Arsenal_FE/blob/master/player_api_front/images/add.png)
 
 ### Upcoming Fixtures Page
 ![Fixtures](https://user-images.githubusercontent.com/53402600/175576722-415625b3-864b-4cd5-aa12-39fc1866dbc9.png)
