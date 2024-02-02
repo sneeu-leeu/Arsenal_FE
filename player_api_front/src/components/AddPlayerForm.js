@@ -22,14 +22,12 @@ const AddPlayerForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    // Check if Player Name is empty
+
     if (!formData.player_name.trim()) {
       setErrorMessage('Player Name cannot be empty');
       return;
     }
 
-    // Check if Jersey Number is a unique integer
     const jerseyNumber = parseInt(formData.jersey_number);
     if (isNaN(jerseyNumber) || players.some(player => player.jersey_number === jerseyNumber)) {
       setErrorMessage('Jersey Number must be a unique integer');
@@ -72,7 +70,7 @@ const AddPlayerForm = () => {
           <Form.Label>Goals Scored</Form.Label>
           <Form.Control type="number" name="goals_scored" value={formData.goals_scored} onChange={handleChange} />
         </Form.Group>
-        <Button variant="primary" type="submit">Add Player</Button>
+        <Button className={'mt-4'} variant="primary" type="submit">Add Player</Button>
       </Form>
     </>
   );

@@ -53,8 +53,8 @@ function PlayerList() {
               <td>{player.jersey_number}</td>
               <td>{player.goals_scored}</td>
               <td>
-                <Link to={`/edit/${player.id}`} className="btn btn-primary">Edit</Link>
-                <button onClick={() => handleDeletePlayer(player.id)} className="btn btn-danger">Remove</button>
+                <button onClick={() => toggleEditModal(player.id)} className="btn btn-primary">Edit</button>
+                <button onClick={() => handleDeletePlayer(player.id)} className="btn btn-danger mx-2">Remove</button>
               </td>
             </tr>
           ))}

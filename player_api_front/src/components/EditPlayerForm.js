@@ -63,7 +63,7 @@ function EditPlayerForm({ playerId }) {
           <label htmlFor="goalsScored">Goals Scored</label>
           <input type="number" className="form-control" id="goalsScored" name="goals_scored" value={formData.goals_scored} onChange={handleChange} />
         </div>
-        <button type="submit" className="btn btn-primary">Save Changes</button>
+        <button type="submit" className="btn btn-primary my-2">Save Changes</button>
       </form>
     </div>
   );
