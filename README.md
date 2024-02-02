@@ -4,21 +4,23 @@
 [ARSENAL API](https://github.com/sneeu-leeu/arsenal_api)
 
 ### Home Page
-![homepage]()
+![homepage](https://github.com/sneeu-leeu/Arsenal_FE/blob/master/player_api_front/images/Screenshot%20from%202024-02-02%2023-17-10.png)
 
 ### Player CRUD page
 ![Player](https://user-images.githubusercontent.com/53402600/175576586-e7e36060-d756-479b-9b6d-c950a3730209.png)
 
 
 ### Full Squad Page (external API)
-![Full Squad](https://user-images.githubusercontent.com/53402600/175576633-04cdc912-8722-43fd-a11e-b64e9824fc5f.png)
+![Full Squad](https://github.com/sneeu-leeu/Arsenal_FE/blob/master/player_api_front/images/squad.png)
 
 
 ### Add/Update modals
-![Modal](https://github.com/sneeu-leeu/Arsenal_FE/blob/master/player_api_front/images/add.png)
+![Modal](https://user-images.githubusercontent.com/53402600/175576683-c7752204-6d33-4027-a234-a51de43bff66.png)
+
+![modal](https://github.com/sneeu-leeu/Arsenal_FE/blob/master/player_api_front/images/edit.png)
 
 ### Upcoming Fixtures Page
-![Fixtures](https://user-images.githubusercontent.com/53402600/175576722-415625b3-864b-4cd5-aa12-39fc1866dbc9.png)
+![Fixtures](https://github.com/sneeu-leeu/Arsenal_FE/blob/master/player_api_front/images/fixtures.png)
 
 
 ## Built With
