@@ -1,7 +1,7 @@
 # Arsenal Front End
 
 ## Link to the backend
-[ARSENAL API](https://github.com/omarsalem7/capstone-back-end](https://github.com/sneeu-leeu/arsenal_api)
+[ARSENAL API](https://github.com/sneeu-leeu/arsenal_api)
 
 ### Home Page
 ![homepage](https://user-images.githubusercontent.com/53402600/175576410-6d7b3cc3-f16c-4a40-a651-f1cfef00d548.png)
