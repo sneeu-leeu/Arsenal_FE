@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Modal, Button, container } from 'react-bootstrap';
 
 function EditPlayerForm({ playerId }) {
   const [formData, setFormData] = useState({
@@ -8,8 +7,6 @@ function EditPlayerForm({ playerId }) {
     jersey_number: '',
     goals_scored: ''
   });
-
-  const [showModal, setShowModal] = useState(false);
 
 
   useEffect(() => {
