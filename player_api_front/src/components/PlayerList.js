@@ -1,13 +1,40 @@
-import React from 'react';
-import usePlayer from '../hooks/usePlayer';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import usePlayerService from '../hooks/usePlayerService';
+import AddPlayerModal from '../modals/AddPlayerModal';
+import EditPlayerModal from '../modals/EditPlayerModal';
 
 function PlayerList() {
-  const players = usePlayer();
+  const [showAddModal, setShowAddModal] = useState(false);
+  const [showEditModal, setShowEditModal] = useState(false);
+  const [selectedPlayerId, setSelectedPlayerId] = useState(null);
+
+  const toggleAddModal = () => setShowAddModal(!showAddModal);
+  const toggleEditModal = (playerId) => {
+    setShowEditModal(!showEditModal);
+    setSelectedPlayerId(playerId);
+  };
+
+  const { players, error, deletePlayer } = usePlayerService();
+
+  const handleDeletePlayer = async (playerId) => {
+    try {
+      await deletePlayer(playerId);
+    } catch (error) {
+      console.error('Error deleting player:', error);
+    }
+  };
+
+
+  if (error) {
+    return <p>Error: {error}</p>;
+  }
 
   return (
-    <div>
-        <Link to="/add" className="btn btn-primary mb-3">Add Player</Link>
+    <div className='container'>
+      <button className='btn btn-primary mb-2 center' onClick={toggleAddModal}>Add Player</button>
+      <AddPlayerModal show={showAddModal} onHide={toggleAddModal} />
+
       <table className="table table-bordered">
         <thead>
           <tr>
@@ -26,14 +53,17 @@ function PlayerList() {
               <td>{player.jersey_number}</td>
               <td>{player.goals_scored}</td>
               <td>
-                <button className="btn btn-primary">Edit</button>
-                <button className="btn btn-danger">Remove</button>
+                <Link to={`/edit/${player.id}`} className="btn btn-primary">Edit</Link>
+                <button onClick={() => handleDeletePlayer(player.id)} className="btn btn-danger">Remove</button>
               </td>
             </tr>
           ))}
         </tbody>
       </table>
+
+      <EditPlayerModal show={showEditModal} onHide={toggleEditModal} playerId={selectedPlayerId} />
     </div>
   );
 }
+
 export default PlayerList;

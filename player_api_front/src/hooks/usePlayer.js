@@ -18,10 +18,6 @@ function usePlayers() {
     };
 
     fetchPlayers();
-
-    return () => {
-      // Clean up any pending requests if needed
-    };
   }, []);
 
   return players;
